@@ -14,7 +14,6 @@ a {
 }
 
 #cell { 
-  position: absolute; 
   width: 400px; 
   left: calc(50% - 220px); 
   margin: 0;
