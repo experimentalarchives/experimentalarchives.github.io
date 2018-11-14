@@ -39,7 +39,7 @@ function generate() {
     document.getElementById("code1").style.display = "block";
     document.getElementById("code2").style.display = "block";
     document.getElementById("desc").style.textAlign = "left";
-    document.getElementById("desc").innerHTML = "<b>First code:</b> Paste it where you want the player to be.<br><b>Second code:</b> Paste it just before /body (located near the end of your blog or website’s HTML)."
+    document.getElementById("desc").innerHTML = "<b>First code:</b> Paste it where you want the player to be. Change the margin numbers for exact positioning.<br><b>Second code:</b> Paste it just before /body (located near the end of your blog or website’s HTML)."
     
     // declare variables for multi-info and multi-names spans
 
@@ -76,7 +76,7 @@ function generate() {
 
         // generate user code in "textarea"
 
-        document.getElementById("code1").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;margin-top: 0px; margin-left: 0px&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display:none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display:none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
+        document.getElementById("code1").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;margin-top: 0px; margin-left: 0px;&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display:none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display:none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
         document.getElementById("code2").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;script src&equals;&quot;https://cinness.github.io/mtp/instant-medium.js&quot;&gt;&lt;&sol;script&gt;";
     })();
 }
