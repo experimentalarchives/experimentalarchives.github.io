@@ -8,4 +8,4 @@
 - Optional titles
 - Choose mini or medium dimensions
 
-**[Click here for preview, customization & code](https://cinness.github.io/mini.html)**
+**[Click here for preview, customization & code](https://cinness.github.io/mtp/mini.html)**
