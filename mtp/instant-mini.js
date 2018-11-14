@@ -1,4 +1,4 @@
-    // code forked at https://cinness.github.io/mini.html
+    // code forked at https://cinness.github.io/
 
 mtp();
 
