@@ -66,7 +66,7 @@ function generate() {
     }
 
     (function() {
-
+        
         // delete the last index in info strings so they don't end in space or comma
 
         var oneinfolength = oneinfo.length - 1;
