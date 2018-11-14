@@ -1,4 +1,6 @@
-**Coding for MultiTune Player: [https://github.com/cinness/cinness.github.io/tree/master/mtp](https://github.com/cinness/cinness.github.io/tree/master/mtp)** 
+**Complete coding for MultiTune Player: [https://github.com/cinness/cinness.github.io/tree/master/mtp](https://github.com/cinness/cinness.github.io/tree/master/mtp)** 
+
+**Interactive preview and customization [https://cinness.github.io/mtp/mini.html](https://cinness.github.io/mtp/mini.html)**
 
 # MultiTune Player
 
