@@ -1,9 +1,123 @@
+@media only screen and (min-width:476px) {
+    
+#xmedium { 
+    display: none;
+}
+
+#xmedium a { 
+    display: none;
+}
+
+#xautoplay { 
+    display: none;
+}
+
+#xautoplay input { 
+    display: none;
+}
+
+#xcolor-select { 
+    display: none;
+}
+
+#xcolor-select input { 
+    display: none;
+}
+
+#xcolor-select input, #autoplay input { 
+    display: none;
+}  
+    
+}
+
 
 @media only screen and (max-width:475px) {
 #cell {
     width: calc(100% - 2em)!important;
     }
-  
+
+#medium { 
+    display: none;
+}
+
+#medium a { 
+    display: none;
+}
+
+#autoplay { 
+    display: none;
+}
+
+#autoplay input { 
+    display: none;
+}
+
+#color-select { 
+    display: none;
+}
+
+#color-select input { 
+    display: none;
+}
+
+#color-select input, #autoplay input { 
+    display: none;
+}
+      
+#xmedium { 
+  display: block; 
+  border-radius: 3px; 
+  letter-spacing: 1px; 
+  float: right;
+  margin: -20px 361px 0 0;
+}
+
+#xmedium a { 
+  border-radius: 3px; 
+  padding: 4px 6px 4px 6px; 
+  color: #ffffff; 
+  background: #737373; 
+  text-decoration: none;
+}
+
+#xautoplay { 
+  display: block; 
+  float: right;
+  margin: 0 14px 0 0;
+}
+
+#xautoplay input { 
+  padding: 5px 6px; 
+  background: #FF0054; 
+  color: #ffffff; 
+  letter-spacing: 1px; 
+}
+
+#xcolor-select { 
+  display: block; 
+  float: right;
+  margin: 0 172px 0 0;
+}
+
+#xcolor-select input { 
+  width: 60px; 
+  text-align: center; 
+  padding: 4px 0px 4px 2px; 
+  letter-spacing: 1px; 
+}
+
+#xcolor-select input, #autoplay input { 
+  border: 0px; 
+  outline: none; 
+  cursor: pointer; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+    
 }
 
 body { 
