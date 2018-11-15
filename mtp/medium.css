@@ -18,8 +18,6 @@ a {
   width: 400px; 
   left: calc(50% - 220px); 
   margin: 20px 0 0 0;
-  font-size: 15px;
-  font-weight: 900;
 }
 
 #cell { 
