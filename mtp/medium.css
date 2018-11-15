@@ -37,7 +37,7 @@ body {
 
 #trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
   display: block; 
-  width: 80px; 
+  width: calc(100% - 12em)!important;
   float: left; 
   border: 1px solid #E0E0E0; 
   background: #ffffff; 
