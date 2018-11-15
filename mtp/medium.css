@@ -1,3 +1,12 @@
+@media only screen and (max-width:875px) {
+#cell {
+  position:absolute!important;
+  top:0!important;
+  left:0!important;
+  min-width:calc(100% - 2em)!important;
+  width:calc(100% - 2em)!important;
+    }
+  
 body { 
   margin: 0; 
   background: #ffffff; 
