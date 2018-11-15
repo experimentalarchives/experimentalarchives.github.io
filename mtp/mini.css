@@ -36,9 +36,9 @@
 @media only screen and (max-width:475px) {
 
 #cell {
-    width: calc(100% - 2em)!important;
-    margin-left: 2em!important;
-    margin-left: -0.5em!important;
+    width: calc(100% - 4em)!important;
+    margin-left: 4em!important;
+    margin-top: -0.5em!important;
     }
     
 #desc { 
