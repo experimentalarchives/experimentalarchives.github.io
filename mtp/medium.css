@@ -19,6 +19,23 @@ body {
   color: #999999; 
 }
     
+#mini { 
+  display: block; 
+  border-radius: 3px; 
+  letter-spacing: 1px; 
+  float: right;
+  margin: -20px 162px 0 0;
+}
+
+#mini a { 
+  border-radius: 3px; 
+  padding: 4px 5px 4px 6px; 
+  color: #ffffff; 
+  background: #737373; 
+  text-decoration: none;
+}
+ 
+    
 }
 
 body { 
