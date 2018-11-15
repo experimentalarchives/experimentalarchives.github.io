@@ -36,8 +36,8 @@
 @media only screen and (max-width:475px) {
 
 #cell {
-    width: calc(100% - 2em)!important;
-    margin-left: 2em!important;
+    width: calc(100% - 4em)!important;
+    margin-left: 4em!important;
     }
     
 #desc { 
