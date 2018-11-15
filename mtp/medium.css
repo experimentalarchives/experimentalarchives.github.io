@@ -37,7 +37,7 @@ body {
  
 #trackbox { 
   margin: 16px 0 0 0; 
-  width: calc(100% - 8em)!important;
+  width: calc(100% - 13em)!important;
 }
 
 #color-select { 
