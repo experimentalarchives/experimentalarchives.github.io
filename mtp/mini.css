@@ -37,7 +37,7 @@
 
 #cell {
     width: calc(100% - 4em)!important;
-    margin-left: 2.5em!important;
+    margin-left: 2.3em!important;
     margin-top: 0.8em!important;
 }
     
@@ -92,7 +92,7 @@
 #xautoplay { 
   display: block; 
   float: right;
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 
 #xautoplay input { 
