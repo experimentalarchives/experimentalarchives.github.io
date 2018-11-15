@@ -3,7 +3,24 @@
     width: calc(100% - 8em)!important;
     margin: 56px!important;
     }
+    
+#desc { 
+  margin: 40px 0px 16px 0px; 
+  text-align: justify; 
 }
+ 
+body { 
+  margin: 0; 
+  background: #ffffff; 
+  font-family: arial, sans-serif; 
+  font-size: 0.750em;
+  line-height: 1.188em;
+  letter-spacing: 1px; 
+  color: #999999; 
+}
+    
+}
+
 body { 
   margin: 0; 
   background: #ffffff; 
