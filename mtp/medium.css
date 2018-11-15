@@ -19,11 +19,9 @@ body {
 }
     
 #mini { 
-  display: block; 
   border-radius: 3px; 
   letter-spacing: 1px; 
-  float: right;
-  margin: -20px -50px 0 0;
+  margin: -20px 50px 0 0;
 }
 
 #mini a { 
