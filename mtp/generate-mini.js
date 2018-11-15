@@ -3,6 +3,7 @@
 var color;
 function changecolor() {
     color = document.getElementById("playercolor").value;
+    color = document.getElementById("xplayercolor").value;
     document.getElementById("xtrackname").style.color = "#" + color;
     document.getElementById("pbar1").style.background = "#" + color;
     document.getElementById("pbar2").style.background = "#" + color;
@@ -28,6 +29,23 @@ function auto() {
     else {}
 }
 
+
+
+var autos = "off";
+function auto() {
+    if ( autos == "off" ) {
+        autos = "on";
+        document.getElementById("xabutton").style.background = "#0CDB58";
+        document.getElementById("xabutton").value = "autoplay is on";
+    }
+    else if ( autos == "on" ) {
+        autos = "off";
+        document.getElementById("xabutton").style.background = "#FF0054";
+        document.getElementById("xabutton").value = "autoplay is off";
+    }
+    else {}
+}
+
 // generate user code function
 
 function generate() {
@@ -35,6 +53,7 @@ function generate() {
     // hide customisation interface and show codebox
 
     document.getElementById("index-color-select").style.display = "none";
+    document.getElementById("xindex-color-select").style.display = "none";
     document.getElementById("code1").style.display = "block";
     document.getElementById("code2").style.display = "block";
     document.getElementById("desc").style.textAlign = "left";
