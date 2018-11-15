@@ -60,14 +60,10 @@ body {
 }
 
 #color-select { 
-  display: block; 
-  float: right;
   margin: 0 142px 0 0;
 }
 
 #autoplay { 
-  display: block; 
-  float: right;
   margin: 0 130px 0 0;
 }
 
