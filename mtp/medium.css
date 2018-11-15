@@ -1,7 +1,7 @@
 @media only screen and (max-width:475px) {
 #cell {
     width: calc(100% - 8em)!important;
-    margin: 26px!important;
+    margin: 26px 20px!important;
     }
     
 #desc { 
