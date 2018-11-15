@@ -52,6 +52,24 @@ body {
   margin: 0 -30px 0 0;
 }
 
+#generate { 
+  width: calc(100% - 8em)!important;
+  margin: 15px 0 0 0; 
+  border: 1px solid #E0E0E0; 
+  outline: none; 
+  cursor: pointer; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+  color: #999999; 
+  padding: 8px 6px; 
+  background: #ffffff; 
+  letter-spacing: 1px; 
+}
+    
     
 }
 
