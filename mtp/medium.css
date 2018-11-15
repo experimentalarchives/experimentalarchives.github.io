@@ -34,10 +34,29 @@ body {
   background: #737373; 
   text-decoration: none;
 }
- 
+
+#trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
+  display: block; 
+  width: 120px; 
+  float: left; 
+  border: 1px solid #E0E0E0; 
+  background: #ffffff; 
+  outline: none; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  letter-spacing: 1px; 
+  margin: 7px 0 0 0; 
+  color: #999999; 
+  padding: 4px 6px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+    
 #trackbox { 
   margin: 16px 0 0 0; 
-  width: calc(100% - 13em)!important;
+  width: calc(100% - 8em)!important;
 }
 
 #color-select { 
