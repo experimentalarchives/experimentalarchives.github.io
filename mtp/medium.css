@@ -37,7 +37,7 @@ body {
 
 #trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
   display: block; 
-  width: calc(100% - 12em)!important;
+  width: calc(100% - 11em)!important;
   float: left; 
   border: 1px solid #E0E0E0; 
   background: #ffffff; 
@@ -56,7 +56,7 @@ body {
     
 #trackbox { 
   margin: 16px 0 0 0; 
-  width: calc(100% - 0.5em)!important;
+  width: 100%!important;
 }
 
 #color-select { 
