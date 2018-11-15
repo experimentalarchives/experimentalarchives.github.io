@@ -95,6 +95,6 @@ function generate() {
         // generate user code in text area
 
         document.getElementById("code1").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;margin-top: 0px; margin-left: 0px;&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display:none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display:none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
-        document.getElementById("code2").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;script src&equals;&quot;https://cinness.github.io/mtp/instant-mini.js&quot;&gt;&lt;&sol;script&gt;";
+        document.getElementById("code2").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;script src&equals;&quot;https://experimentalarchives.github.io/mtp/instant-mini.js&quot;&gt;&lt;&sol;script&gt;";
     })();
 }
