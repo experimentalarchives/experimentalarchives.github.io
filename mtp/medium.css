@@ -72,7 +72,7 @@ body {
 }
 
 #generate { 
-  width: calc(100% - 3em)!important;
+  width: calc(100% - 1.5em)!important;
   margin: 15px 0 0 0; 
   border: 1px solid #E0E0E0; 
   outline: none; 
