@@ -37,8 +37,8 @@
 
 #cell {
     width: calc(100% - 4em)!important;
-    margin-left: 4em!important;
-    margin-top: -0.5em!important;
+    margin-left: 3.5em!important;
+    margin-top: 0.5em!important;
     }
     
 #desc { 
