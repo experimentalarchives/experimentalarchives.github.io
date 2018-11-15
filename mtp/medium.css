@@ -22,7 +22,8 @@ body {
 #mini { 
   border-radius: 3px; 
   letter-spacing: 1px; 
-  margin: -20px 0px 0 20px;
+  float: right;
+  margin: -20px 313px 0 0;
 }
 
 #mini a { 
