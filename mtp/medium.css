@@ -22,7 +22,7 @@ body {
 #mini { 
   border-radius: 3px; 
   letter-spacing: 1px; 
-  margin: -20px -20px 0 0;
+  margin: -20px 20px 0 0;
 }
 
 #mini a { 
