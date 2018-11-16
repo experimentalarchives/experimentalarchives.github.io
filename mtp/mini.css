@@ -81,7 +81,7 @@
   border-radius: 3px; 
   letter-spacing: 1px; 
   float: right;
-  margin: -24px 286px 0 0; 
+  margin: -22px 286px 0 0; 
 }
 
 #xmedium a { 
@@ -95,7 +95,7 @@
 #xautoplay { 
   display: block; 
   float: right;
-  margin: 0 25px 0 0;
+  margin: 0 23px 0 0;
 }
 
 #xautoplay input { 
