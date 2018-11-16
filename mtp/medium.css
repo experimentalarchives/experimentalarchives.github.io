@@ -57,11 +57,11 @@ a {
 }
 
 #mini { 
-  
+  display: inline;
   border-radius: 3px; 
   letter-spacing: 1px; 
-    margin: 0 14px 0 0;
-  float: right;
+    margin: 0 0px 0 0;
+  float: left;
 
 }
 
