@@ -8,6 +8,10 @@ body {
   color: #999999; 
 }
 
+p {
+	margin: 0.5em 0;
+}
+
 a { 
   color: #999999; 
   text-decoration: underline; 
