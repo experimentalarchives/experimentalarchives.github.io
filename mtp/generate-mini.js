@@ -29,23 +29,6 @@ function auto() {
     else {}
 }
 
-
-
-var autos = "off";
-function auto() {
-    if ( autos == "off" ) {
-        autos = "on";
-        document.getElementById("xabutton").style.background = "#0CDB58";
-        document.getElementById("xabutton").value = "autoplay is on";
-    }
-    else if ( autos == "on" ) {
-        autos = "off";
-        document.getElementById("xabutton").style.background = "#FF0054";
-        document.getElementById("xabutton").value = "autoplay is off";
-    }
-    else {}
-}
-
 // generate user code function
 
 function generate() {
