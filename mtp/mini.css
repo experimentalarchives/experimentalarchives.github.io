@@ -244,7 +244,7 @@ a {
 
 #mini1 {   display: inline;
   border-radius: 3px; 
-  letter-spacing: 1px; 
+  letter-spacing: 1px; font-size: 0.750em;
 
 
 }
@@ -254,7 +254,7 @@ a {
   padding: 4px 5px 4px 6px; 
   color: #ffffff; 
   background: #737373; 
-  text-decoration: none;
+  text-decoration: none;font-size: 0.750em;
 }
 
 #autoplay {   display: inline-block;
