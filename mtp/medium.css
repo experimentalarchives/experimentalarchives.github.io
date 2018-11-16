@@ -48,6 +48,10 @@ a {
   word-break: break-word;
 }
 
+#spacer { 
+  padding: 5px;
+}
+
 #descp { 
   display: inline; 
   float: right;
