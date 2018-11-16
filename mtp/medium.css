@@ -56,6 +56,21 @@ a {
   word-break: break-word;
 }
 
+#mini1 {   display: inline-block;
+  border-radius: 3px; 
+  letter-spacing: 1px; 
+
+
+}
+
+#mini1 a { 
+  border-radius: 3px; 
+  padding: 4px 5px 4px 6px; 
+  color: #ffffff; 
+  background: #737373; 
+  text-decoration: none;
+}
+
 #mini {   display: inline-block;
   border-radius: 3px; 
   letter-spacing: 1px; 
