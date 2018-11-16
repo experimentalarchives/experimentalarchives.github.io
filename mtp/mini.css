@@ -115,7 +115,7 @@
   letter-spacing: 1px; 
 }
 
-#xcolor-select input, #autoplay input { 
+#xcolor-select input, #xautoplay input { 
   border: 0px; 
   outline: none; 
   cursor: pointer; 
