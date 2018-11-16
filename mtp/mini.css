@@ -193,7 +193,7 @@ a {
   position: absolute; 
   width: 400px; 
   left: calc(50% - 220px); 
-  margin: 56px 0 0 0;
+  margin: 56px 0 56px 0;
   padding: 20px; 
   border: 1px solid #d7d7d7;
   border-radius: 9px; 
