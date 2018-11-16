@@ -56,8 +56,7 @@ a {
   word-break: break-word;
 }
 
-#mini { 
-  display: inline;
+#mini {   display: inline;
   border-radius: 3px; 
   letter-spacing: 1px; 
     margin: 0 0px 0 0;
@@ -73,7 +72,7 @@ a {
   text-decoration: none;
 }
 
-#autoplay { 
+#autoplay {   display: inline;
   float: right;
   margin: 0 14px 0 0;
 }
@@ -85,7 +84,7 @@ a {
   letter-spacing: 1px; 
 }
 
-#color-select { 
+#color-select {   display: inline;
   float: right;
   margin: 0 172px 0 0;
 }
