@@ -49,6 +49,9 @@ a {
 }
 
 #descp { 
+  display: block; 
+  float: right;
+  margin: 40px 332px 0 0;
   word-wrap: break-all; 
   word-break: break-word;
 }
