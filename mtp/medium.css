@@ -51,7 +51,7 @@ a {
 #descp { 
   display: inline; 
   float: right;
-  margin: 40px 332px 0 0;
+  margin: 40px 332px 16px 0;
   word-wrap: break-all; 
   word-break: break-word;
 }
