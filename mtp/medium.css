@@ -69,6 +69,7 @@ a {
 #mini1 {   display: inline;
   border-radius: 3px; 
   letter-spacing: 1px; 
+	  font-size: 12px; 
 
 
 }
@@ -79,6 +80,7 @@ a {
   color: #ffffff; 
   background: #737373; 
   text-decoration: none;
+	  font-size: 12px; 
 }
 
 #mini2 {   display: inline;
