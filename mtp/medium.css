@@ -145,6 +145,8 @@ a {
 
 #trackguide { 
   margin: 0 0 7px 0; 
+  word-wrap: break-all; 
+  word-break: break-word;
 }
 
 #trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
