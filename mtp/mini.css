@@ -44,6 +44,8 @@
     
 #desc { 
   margin: 40px 0px 16px 0px; 
+  word-wrap: break-all; 
+  word-break: break-word;
 }
     
 #medium { 
@@ -209,7 +211,8 @@ a {
   letter-spacing: 0px; 
 }
 
-#desc { 
+#
+{ 
   margin: 40px 0px 16px 0px; 
 }
 
