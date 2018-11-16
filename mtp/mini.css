@@ -1,4 +1,4 @@
-@media only screen and (min-width:476px) {
+@media only screen and (min-width:473px) {
     
 #xmedium { 
     display: none;
@@ -33,7 +33,7 @@
 
 
 
-@media only screen and (max-width:475px) {
+@media only screen and (max-width:472px) {
 
 #cell {
     width: calc(100% - 4.2em)!important;
