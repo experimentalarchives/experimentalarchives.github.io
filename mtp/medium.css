@@ -71,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-#mini2 {   display: inline-block;
+#mini2 {   display: inline;
   border-radius: 3px; 
   letter-spacing: 1px; 
     margin: 0 0 0 0;
