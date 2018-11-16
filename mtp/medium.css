@@ -48,13 +48,10 @@ a {
   word-break: break-word;
 }
 
-#spacer { 
-  margin: 90px 0 0 0;
-}
-
-#spacer-low { 
-  margin: 40px 0 40px 0;
-  padding: 40x 0 40px 0;
+#first { 
+  margin: 90px 0px 16px 0px; 
+  word-wrap: break-all; 
+  word-break: break-word;
 }
 
 #descp { 
