@@ -102,8 +102,8 @@ a {
 }
 
 #autoplay {   display: inline-block;
-  float: right;
-  margin: 0 44px 0 0;
+    margin: 0 0 0 0;
+  float: left;
 }
 
 #autoplay input { 
