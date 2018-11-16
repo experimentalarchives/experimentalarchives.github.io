@@ -1,92 +1,3 @@
-@media only screen and (max-width:475px) {
-#cell {
-    width: calc(100% - 8.2em)!important;
-    margin: 0 auto!important;
-    padding: 0px 0.5em!important;
-    }
-    
-#desc { 
-  margin: 40px 0px 16px 0px; 
-}
- 
-body { 
-  margin: 0; 
-  background: #ffffff; 
-  font-family: arial, sans-serif; 
-  font-size: 0.750em;
-  line-height: 1.188em;
-  letter-spacing: 1px; 
-  color: #999999; 
-}
-    
-#mini { 
-  border-radius: 3px; 
-  letter-spacing: 1px; 
-  float: right;
-  margin: -20px 313px 0 0;
-}
-
-#mini a { 
-  border-radius: 3px; 
-  padding: 4px 5px 4px 6px; 
-  color: #ffffff; 
-  background: #737373; 
-  text-decoration: none;
-}
-
-#trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
-  display: block; 
-  width: calc(100% - 11em)!important;
-  float: left; 
-  border: 1px solid #E0E0E0; 
-  background: #ffffff; 
-  outline: none; 
-  font-family: arial, sans-serif; 
-  font-size: 12px; 
-  line-height: 12px; 
-  letter-spacing: 1px; 
-  margin: 7px 0 0 0; 
-  color: #999999; 
-  padding: 4px 6px; 
-  -webkit-border-radius: 3px; 
-  -moz-border-radius: 3px; 
-  border-radius: 3px; 
-}
-    
-#trackbox { 
-  margin: 16px 0 0 0; 
-  width: 100%!important;
-}
-
-#color-select { 
-  margin: 0 172px 0 0;
-}
-
-#autoplay { 
-  margin: 0 -50px 0 0;
-}
-
-#generate { 
-  width: calc(100% - 0.5em)!important;
-  margin: 15px 0 0 0; 
-  border: 1px solid #E0E0E0; 
-  outline: none; 
-  cursor: pointer; 
-  font-family: arial, sans-serif; 
-  font-size: 12px; 
-  line-height: 12px; 
-  -webkit-border-radius: 3px; 
-  -moz-border-radius: 3px; 
-  border-radius: 3px; 
-  color: #999999; 
-  padding: 8px 6px; 
-  background: #ffffff; 
-  letter-spacing: 1px; 
-}
-    
-    
-}
-
 body { 
   margin: 0; 
   background: #ffffff; 
@@ -100,6 +11,13 @@ body {
 a { 
   color: #999999; 
   text-decoration: underline; 
+}
+
+#mobile { 
+  position: absolute;
+  width: 580px; 
+  left: calc(50% - 284px); 
+  margin: 8px 0 0 0;
 }
 
 #cell { 
@@ -126,6 +44,8 @@ a {
 
 #desc { 
   margin: 40px 0px 16px 0px; 
+  word-wrap: break-all; 
+  word-break: break-word;
 }
 
 #mini { 
@@ -170,7 +90,7 @@ a {
   letter-spacing: 1px; 
 }
 
-#color-select input, #autoplay input, mini input { 
+#color-select input, #autoplay input { 
   border: 0px; 
   outline: none; 
   cursor: pointer; 
@@ -230,7 +150,7 @@ a {
 }
 
 #generate { 
-  width: 410px; 
+  width: 400px; 
   margin: 15px 0 0 0; 
   border: 1px solid #E0E0E0; 
   outline: none; 
