@@ -42,7 +42,8 @@ a {
 #playerbox { 
   position: absolute; 
   width: 390px; 
-  margin: 8px 0 0 calc(50% - 140px);
+  top: 8px;
+  left: 50%;
   letter-spacing: 0px; 
 }
 
