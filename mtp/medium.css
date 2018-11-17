@@ -1,4 +1,4 @@
-       body { 
+body { 
   margin: 0; 
   background: #ffffff; 
   font-family: arial, sans-serif; 
@@ -41,7 +41,7 @@ a {
 
 #playerbox { 
   position: absolute; 
-  width: 130px; 
+  width: 150px; 
   margin: 8px 0 0 calc(50% - 70px);
   letter-spacing: 0px; 
 }
