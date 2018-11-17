@@ -60,7 +60,7 @@ function generate() {
             oneinfo += bb.value;
         }
         if ( dd.value != "" ) {
-            dd.value += ",";
+            dd.value += ";";
             twoinfo += dd.value;
         }
     }
