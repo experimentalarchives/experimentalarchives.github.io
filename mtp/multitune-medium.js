@@ -54,7 +54,6 @@ window.onload = function mtp() {
     xtrackname.style.textAlign = "left";
     xtrackname.style.fontFamily = "arial, sans-serif";
     xtrackname.style.fontSize = "9px";
-    xtrackname.style.fontWeight = "600";
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
     xtrackname.style.marginLeft = "32px";
