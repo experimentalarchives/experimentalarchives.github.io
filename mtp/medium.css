@@ -41,7 +41,7 @@ a {
 
 #playerbox { 
   position: absolute; 
-  width: 300px; 
+  width: 390px; 
   margin: 8px 0 0 calc(50% - 140px);
   letter-spacing: 0px; 
 }
@@ -181,7 +181,7 @@ a {
 
 #trackname1, #trackname2, #trackname3, #trackname4, #trackname5, #trackname6, #trackname7, #trackname8, #trackname9 { 
   display: block; 
-  width: 90px; 
+  width: 390px; 
   float: right; 
   border: 1px solid #E0E0E0; 
   background: #ffffff; 
