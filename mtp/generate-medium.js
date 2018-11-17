@@ -69,9 +69,9 @@ function generate() {
         
         // delete the last index in info strings so they don't end in space or comma
 
-        var oneinfolength = oneinfo.length - 1;
+        var oneinfolength = oneinfo.length - 0;
         var oneinfonew = oneinfo.slice(0,oneinfolength);
-        var twoinfolength = twoinfo.length - 1;
+        var twoinfolength = twoinfo.length - 0;
         var twoinfonew = twoinfo.slice(0,twoinfolength);
 
         // generate user code in "textarea"
