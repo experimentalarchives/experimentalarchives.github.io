@@ -4,7 +4,7 @@
 var color;
 function changecolor() {
     color = document.getElementById("playercolor").value;
-    document.getElementById("xtrackname").style.color = "#" + color;
+    document.getElementById("xmultinames").style.color = "#" + color;
     document.getElementById("pbar1").style.background = "#" + color;
     document.getElementById("pbar2").style.background = "#" + color;
     document.getElementById("xplay").style.borderLeft = "7px solid " + "#" + color;
