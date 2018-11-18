@@ -1,6 +1,6 @@
 body { 
   margin: 0; 
-  background: #f8f8f8; 
+  background: #ffffff; 
   font-family: arial, sans-serif; 
   font-size: 12px; 
   line-height: 19px; 
@@ -8,20 +8,13 @@ body {
   color: #999999; 
 }
 
-p {
-	margin: 1.1em 0;
-}
-
 a { 
   color: #999999; 
   text-decoration: underline; 
 }
 
-#mobile { 
-  position: absolute;
-  width: 580px; 
-  left: calc(50% - 284px); 
-  margin: 8px 0 0 0;
+p {
+  margin: 1.1em 0;
 }
 
 #cell { 
@@ -30,9 +23,9 @@ a {
   left: calc(50% - 220px); 
   margin: 50px 0 50px 0;
   padding: 20px; 
-  border: 1px solid #f8f8f8;
+  border: 1px solid #d7d7d7;
   border-radius: 9px; 
-  background: #f8f8f8;
+  background: #fffafd;
 }
 
 #cell input { 
@@ -41,9 +34,8 @@ a {
 
 #playerbox { 
   position: absolute; 
-  width: 390px; 
-  top: 8px;
-  left: 50%;
+  width: 130px; 
+  margin: 8px 0 0 calc(50% - 70px);
   letter-spacing: 0px; 
 }
 
@@ -53,44 +45,13 @@ a {
   word-break: break-word;
 }
 
-#first { 
-  margin: 90px 0px 36px 0px; 
-  word-wrap: break-all; 
-  word-break: break-word;
-}
-
-#descp { 
-  display: inline; 
-  float: right;
-  margin: 40px 332px 16px 0;
-  word-wrap: break-all; 
-  word-break: break-word;
-}
-
-#mini1 {   display: inline;
+#switch { 
+  display: inline;
   border-radius: 3px; 
   letter-spacing: 1px; 
-	  
-
-
 }
 
-#mini1 a { 
-  border-radius: 3px; 
-  padding: 4px 5px 4px 6px; 
-  color: #ffffff; 
-  background: #737373; 
-  text-decoration: none;
-	
-}
-
-#mini2 {   display: inline;
-  border-radius: 3px; 
-  letter-spacing: 1px; 
-
-}
-
-#mini2 a { 
+#switch a { 
   border-radius: 3px; 
   padding: 4px 5px 4px 6px; 
   color: #ffffff; 
@@ -98,23 +59,8 @@ a {
   text-decoration: none;
 }
 
-#mini {   display: inline-block;
-  border-radius: 3px; 
-  letter-spacing: 1px; 
-    margin: 0 0 0 0;
-  float: left;
-
-}
-
-#mini a { 
-  border-radius: 3px; 
-  padding: 4px 5px 4px 6px; 
-  color: #ffffff; 
-  background: #737373; 
-  text-decoration: none;
-}
-
-#autoplay {   display: inline-block;
+#autoplay { 
+  display: inline-block;
   margin: 0 0 0 0;
   float: left;
 }
@@ -126,7 +72,7 @@ a {
   letter-spacing: 1px; 
 }
 
-#color-select {   display: inline-block;
+#color-select { 
   float: right;
   margin: 0 225px 0 0;
 }
