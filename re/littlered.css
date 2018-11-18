@@ -7,7 +7,7 @@ a { color:#999999; text-decoration:underline; }
 #main input::-moz-selection { background:#FFE8EC; }
 #main input { -webkit-appearance:none; }
 
-#playercage { position:absolute; width:130px; margin-left:calc(50% - 60px); letter-spacing:0px; }
+#playercage { position:absolute; width:230px; margin-left:calc(50% - 60px); letter-spacing:0px; }
 
 #infobox { margin:40px 0px 20px 0px; text-align:justify; }
 
