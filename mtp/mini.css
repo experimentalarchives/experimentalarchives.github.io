@@ -177,8 +177,8 @@
 }
  #playerbox { 
   position: absolute; 
-  width: 130px; 
-  margin: 7px 0 0 calc(50% - 58px);
+  width: 210px; 
+  left: 50% - 108px;
   letter-spacing: 0px; 
 }
  #desc { 
