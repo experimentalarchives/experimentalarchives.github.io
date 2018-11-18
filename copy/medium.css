@@ -1,0 +1,219 @@
+body { 
+  margin: 0; 
+  background: #ffffff; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 19px; 
+  letter-spacing: 1px; 
+  color: #999999; 
+}
+
+a { 
+  color: #999999; 
+  text-decoration: underline; 
+}
+
+p {
+  margin: 1.1em 0;
+}
+
+#cell { 
+  position: absolute;
+  width: 400px; 
+  left: calc(50% - 220px); 
+  margin: 50px 0 50px 0;
+  padding: 20px; 
+  border: 1px solid #d7d7d7;
+  border-radius: 9px; 
+  background: #fffafd;
+}
+
+#cell input { 
+  -webkit-appearance: none; 
+}
+
+#playerbox { 
+  position: absolute; 
+  width: 130px; 
+  margin: 8px 0 0 calc(50% - 70px);
+  letter-spacing: 0px; 
+}
+
+#desc { 
+  margin: 40px 0px 16px 0px; 
+  word-wrap: break-all; 
+  word-break: break-word;
+}
+
+#switch { 
+  display: inline;
+  border-radius: 3px; 
+  letter-spacing: 1px; 
+}
+
+#switch a { 
+  border-radius: 3px; 
+  padding: 4px 5px 4px 6px; 
+  color: #ffffff; 
+  background: #737373; 
+  text-decoration: none;
+}
+
+#autoplay { 
+  display: inline-block;
+  margin: 0 0 0 0;
+  float: left;
+}
+
+#autoplay input { 
+  padding: 5px 6px; 
+  background: #FF0054; 
+  color: #ffffff; 
+  letter-spacing: 1px; 
+}
+
+#color-select { 
+  float: right;
+  margin: 0 225px 0 0;
+}
+
+#color-select input { 
+  width: 60px; 
+  text-align: center; 
+  padding: 4.5px 0px 3px 1px; 
+  letter-spacing: 1px; 
+}
+
+#color-select input, #autoplay input { 
+  border: 0px; 
+  outline: none; 
+  cursor: pointer; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+
+#trackbox { 
+  margin: 16px 0 0 0; 
+  width: 400px; 
+}
+
+#trackguide { 
+  margin: 0 0 7px 0; 
+  word-wrap: break-all; 
+  word-break: break-word;
+}
+
+#trackurl1, #trackurl2, #trackurl3, #trackurl4, #trackurl5, #trackurl6, #trackurl7, #trackurl8, #trackurl9 { 
+  display: block; 
+  width: 270px; 
+  float: left; 
+  border: 1px solid #E0E0E0; 
+  background: #ffffff; 
+  outline: none; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  letter-spacing: 1px; 
+  margin: 7px 0 0 0; 
+  color: #999999; 
+  padding: 4px 6px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+
+#trackname1, #trackname2, #trackname3, #trackname4, #trackname5, #trackname6, #trackname7, #trackname8, #trackname9 { 
+  display: block; 
+  width: 90px; 
+  float: right; 
+  border: 1px solid #E0E0E0; 
+  background: #ffffff; 
+  outline: none; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  letter-spacing: 1px; 
+  margin: 7px 0 0 0; 
+  color: #999999; 
+  padding: 4px 6px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+
+#generate { 
+  width: 400px; 
+  margin: 15px 0 0 0; 
+  border: 1px solid #E0E0E0; 
+  outline: none; 
+  cursor: pointer; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+  color: #999999; 
+  padding: 8px 6px; 
+  background: #ffffff; 
+  letter-spacing: 1px; 
+}
+
+#code1 { 
+  display: block; 
+  width: 380px; 
+  height: 130px; 
+  float: right; 
+  border: 1px solid #E0E0E0; 
+  background: #ffffff; 
+  outline: none; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  letter-spacing: 1px; 
+  margin: 7px 0 0 0; 
+  color: #999999; 
+  padding: 10px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+  resize: none; 
+  display: none; 
+  word-wrap: break-word; 
+  -webkit-appearance: none; 
+}
+
+#code2 { 
+  display: block; 
+  width: 380px; 
+  height: 130px; 
+  float: right; 
+  border: 1px solid #E0E0E0; 
+  background: #ffffff; 
+  outline: none; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  letter-spacing: 1px; 
+  margin: 7px 0 0 0; 
+  color: #999999; 
+  padding: 10px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+  resize: none; 
+  display: none; 
+  word-wrap: break-word; 
+  -webkit-appearance: none; 
+}
+
+.kr { 
+  clear: both; 
+}
+
+#playercolor, #abutton, #index-color-select {
+}
