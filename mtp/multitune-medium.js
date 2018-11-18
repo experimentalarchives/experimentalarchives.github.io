@@ -6,9 +6,9 @@ window.onload = function mtp() {
 
     var initinfo = document.getElementById("multi-info").innerHTML;
     var songs = initinfo.split(" ");
-    var sq = songs.length +1;
+    var sq = songs.length - 1;
 
-    var initnames = document.getElementById("xmultinames").innerHTML;
+    var initnames = document.getElementById("multi-names").innerHTML;
     var tracks = initnames.split(",");
 
    // fill holes left by possible blank track titles
@@ -26,12 +26,12 @@ window.onload = function mtp() {
 
     // set up DOM
 
-        document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xmultinames"></div><div id="kr"></div>';
+        document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xtrackname"></div><div id="kr"></div>';
 
     // style player elements
 
     document.getElementById("mtplayer").style.display = "block";
-    document.getElementById("mtplayer").style.width = "105px";
+    document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
 
     var xaudio = document.getElementById("xaudio");
@@ -49,21 +49,21 @@ window.onload = function mtp() {
     controls2.style.display = "block";
     controls2.style.float = "right";
 
-    var xmultinames = document.getElementById("xmultinames");
-    xmultinames.style.display = "block";
-    xmultinames.style.textAlign = "left";
-    xmultinames.style.fontFamily = "arial, sans-serif";
-    xmultinames.style.fontSize = "9px";
-    xmultinames.style.fontWeight = "600";
-    xmultinames.style.lineHeight = "13px";
-    xmultinames.style.marginTop = "-1px";
-    xmultinames.style.marginLeft = "32px";
-    xmultinames.style.width = "390px";
-    xmultinames.style.position = "fixed";
-    xmultinames.style.overflow = "hidden";
-    xmultinames.style.cursor = "default";
-    xmultinames.style.color = songs[0];
-    xmultinames.innerHTML = tracks[2];
+    var xtrackname = document.getElementById("xtrackname");
+    xtrackname.style.display = "block";
+    xtrackname.style.textAlign = "left";
+    xtrackname.style.fontFamily = "arial, sans-serif";
+    xtrackname.style.fontSize = "12px";
+    xtrackname.style.fontWeight = "600";
+    xtrackname.style.lineHeight = "13px";
+    xtrackname.style.marginTop = "-1px";
+    xtrackname.style.marginLeft = "32px";
+    xtrackname.style.width = "90px";
+    xtrackname.style.position = "absolute";
+    xtrackname.style.overflow = "hidden";
+    xtrackname.style.cursor = "default";
+    xtrackname.style.color = songs[0];
+    xtrackname.innerHTML = tracks[2];
 
     var xplay = document.getElementById("xplay");
     xplay.style.display = "block";
@@ -154,7 +154,7 @@ window.onload = function mtp() {
    function skipend() {
         if ( list == sq ) {
             xaudio.src = songs[2];
-            xmultinames.innerHTML = tracks[2];
+            xtrackname.innerHTML = tracks[2];
             list = 2;
             xaudio.play();
             xplay.style.display = "none";
@@ -164,7 +164,7 @@ window.onload = function mtp() {
         else {
             ++list;
             xaudio.src = songs[list];
-            xmultinames.innerHTML = tracks[list];
+            xtrackname.innerHTML = tracks[list];
             xaudio.play();
             xplay.style.display = "none";
             xpause.style.display = "block";
