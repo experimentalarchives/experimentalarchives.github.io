@@ -4,11 +4,11 @@ window.onload = function mtp() {
         
     // get user input info
 
-    var initinfo = document.getElementById("multi-info").innerHTML;
+    var initinfo = document.getElementById("xlittleplayerinfo").innerHTML;
     var songs = initinfo.split(" ");
     var sq = songs.length - 1;
 
-    var initnames = document.getElementById("multi-names").innerHTML;
+    var initnames = document.getElementById("xlittleplayernames").innerHTML;
     var tracks = initnames.split(",");
 
    // fill holes left by possible blank track titles
