@@ -8,7 +8,7 @@ window.onload = function mtp() {
     var songs = initinfo.split(" ");
     var sq = songs.length - 1;
 
-    var initnames = document.getElementById("multi-names").innerHTML;
+    var initnames = document.getElementById("multinames").innerHTML;
     var tracks = initnames.split(",");
 
    // fill holes left by possible blank track titles
