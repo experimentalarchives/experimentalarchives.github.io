@@ -35,7 +35,7 @@ p {
 #playerbox { 
   position: absolute; 
   width: 190px; 
-  margin: 8px 0 0 calc(50% - 70px);
+  margin: 8px 0 0 calc(50% - 120px);
   letter-spacing: 0px; 
 }
 
