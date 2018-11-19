@@ -3,6 +3,6 @@
 ❤
 
 ```diff
-+ this will be highlighted in green
-- this will be highlighted in red
++ [cinness.github.io](https://cinness.github.io/)
+- [cinness.github.io](https://cinness.github.io/)
 ```
