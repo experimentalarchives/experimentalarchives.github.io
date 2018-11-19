@@ -4,7 +4,7 @@ window.onload = function mtp() {
         
     // get user input info
 
-    var initinfo = document.getElementById("multi-infos").innerHTML;
+    var initinfo = document.getElementById("multi-infod").innerHTML;
     var songs = initinfo.split(" ");
     var sq = songs.length - 1;
 
