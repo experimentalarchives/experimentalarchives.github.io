@@ -1,9 +1,9 @@
-body { margin:0; background:#f8f8f8; font-family:arial, sans-serif; font-size:12px; line-height:19px; letter-spacing:1px; color:#999; }
+body { margin:0; background:#fbfbfb; font-family:arial, sans-serif; font-size:12px; line-height:19px; letter-spacing:1px; color:#999; }
 
 a { color:#999999; text-decoration:underline; }
 
 #main { position:absolute; width:400px; left:calc(50% - 200px); margin-top:150px; padding-bottom:40px; }
-#main input::selection { background:#f8f8f8; }
+#main input::selection { background:#fbfbfb; }
 #main input::-moz-selection { background:#FFE8EC; }
 #main input { -webkit-appearance:none; }
 
