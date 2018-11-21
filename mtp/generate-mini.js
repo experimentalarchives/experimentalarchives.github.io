@@ -1,18 +1,18 @@
-// live preview color function
+
+    // live preview color function
 
 var color;
 function changecolor() {
     color = document.getElementById("playercolor").value;
-    color = document.getElementById("xplayercolor").value;
     document.getElementById("xtrackname").style.color = "#" + color;
     document.getElementById("pbar1").style.background = "#" + color;
     document.getElementById("pbar2").style.background = "#" + color;
-    document.getElementById("xplay").style.borderLeft = "6px solid " + "#" + color;
-    document.getElementById("sk1").style.borderLeft = "4px solid " + "#" + color;
-    document.getElementById("sk2").style.borderLeft = "4px solid " + "#" + color;
+    document.getElementById("xplay").style.borderLeft = "7px solid " + "#" + color;
+    document.getElementById("sk1").style.borderLeft = "5px solid " + "#" + color;
+    document.getElementById("sk2").style.borderLeft = "5px solid " + "#" + color;
 }
 
-// turn autoplay on or off function
+    // turn autoplay on or off function
 
 var autos = "off";
 function auto() {
@@ -29,14 +29,13 @@ function auto() {
     else {}
 }
 
-// generate user code function
+    // generate user code function
 
 function generate() {
 
     // hide customisation interface and show codebox
 
     document.getElementById("index-color-select").style.display = "none";
-    document.getElementById("xindex-color-select").style.display = "none";
     document.getElementById("code1").style.display = "block";
     document.getElementById("code2").style.display = "block";
     document.getElementById("desc").style.textAlign = "left";
@@ -75,9 +74,9 @@ function generate() {
         var twoinfolength = twoinfo.length - 1;
         var twoinfonew = twoinfo.slice(0,twoinfolength);
 
-        // generate user code in text area
+        // generate user code in "textarea"
 
-        document.getElementById("code1").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;margin-top: 0px; margin-left: 0px;&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display:none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display:none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
-        document.getElementById("code2").innerHTML = "<!-- code forked at https://cinness.github.io/ --> &lt;script src&equals;&quot;https://experimentalarchives.github.io/mtp/instant-mini.js&quot;&gt;&lt;&sol;script&gt;";
+        document.getElementById("code1").innerHTML = "<!-- code forked at https://experimentalarchives.github.io/ --> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;margin-top: 0px; margin-left: 0px;&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display:none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display:none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
+        document.getElementById("code2").innerHTML = "<!-- code forked at https://experimentalarchives.github.io/ --> &lt;script src&equals;&quot;https://experimentalarchives.github.io/mtp/instant-medium.js&quot;&gt;&lt;&sol;script&gt;";
     })();
 }
