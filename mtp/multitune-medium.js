@@ -77,8 +77,8 @@ window.onload = function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
-    xplay.onmouseover = function() { this.style.backgroundColor = "#" + colorx; }; 
-    xplay.onmouseout = function() { this.style.backgroundColor = "#ffffff"; }; 
+    xpause.onmouseover = function() { this.style.backgroundColor = "#" + colorx; }; 
+    xpause.onmouseout = function() { this.style.backgroundColor = "#ffffff"; }; 
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
