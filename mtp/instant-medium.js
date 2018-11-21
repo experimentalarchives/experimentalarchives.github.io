@@ -45,6 +45,15 @@ document.getElementById("hovertab");
     document.getElementById("hovertab").style.overflow = "hidden";
     document.getElementById("hovertab").style.bottom = "15px";
     document.getElementById("hovertab").style.left = "15px";
+    
+    var multisymbol embed = document.getElementById("multisymbol");
+    multisymbol.style.width = "24px;";
+    multisymbol.style.height = "24px;";
+    multisymbol.style.marginTop = "3px;";
+    multisymbol.style.marginLeft = "3px;";
+    multisymbol.style.transition = "all 0.4s ease-in-out;";
+    multisymbol.onmouseover = function() { this.style.width = "174px"; };
+    multisymbol.onmouseout = function() { this.style.width = "24px"; };
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
