@@ -74,8 +74,8 @@ var jsc = {
 	isColorAttrSupported : (function () {
 		var elm = document.createElement('input');
 		if (elm.setAttribute) {
-			elm.setAttribute('type', 'color');
-			if (elm.type.toLowerCase() == 'color') {
+			elm.setAttribute('type', 'colorx');
+			if (elm.type.toLowerCase() == 'colorx') {
 				return true;
 			}
 		}
