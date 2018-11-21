@@ -66,7 +66,7 @@ window.onload = function mtp() {
     xtrackname.innerHTML = tracks[2];
 
     var xplay = document.getElementById("xplay");
-    xplay.onmouseover = function() { this.style.backgroundColorx = "#" + color; }; 
+    xplay.onmouseover = function() { this.style.backgroundColor = "#" + colorx; }; 
     xplay.onmouseout = function() { this.style.backgroundColor = "#ffffff"; }; 
     xplay.style.display = "block";
     xplay.style.width = "0px";
@@ -77,8 +77,8 @@ window.onload = function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
-    xpause.onmouseover = function() { this.style.opacity = "0.5"; };
-    xpause.onmouseout = function() { this.style.opacity = "1"; };
+    xplay.onmouseover = function() { this.style.backgroundColor = "#" + color; }; 
+    xplay.onmouseout = function() { this.style.backgroundColor = "#ffffff"; }; 
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
