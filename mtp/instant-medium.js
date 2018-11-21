@@ -52,8 +52,6 @@ function mtp() {
     controls2.style.float = "right";
 
     var xtrackname = document.getElementById("xtrackname");
-    xtrackname.onmouseover = function() { this.style.opacity = "1"; };
-    xtrackname.onmouseout = function() { this.style.opacity = "0"; };
     xtrackname.style.display = "block";
     xtrackname.style.textAlign = "left";
     xtrackname.style.fontFamily = "arial, sans-serif";
