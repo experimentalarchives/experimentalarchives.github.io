@@ -77,15 +77,13 @@ window.onload = function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
+    xpause.onmouseover = function() { this.style.opacity = "0.5"; };
+    xpause.onmouseout = function() { this.style.opacity = "1"; };
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
     var pbar1 = document.getElementById("pbar1");
-    pbar1.onmouseover = function() { this.style.opacity = "0.5"; };
-    pbar1.onmouseout = function() { this.style.opacity = "1"; };
     var pbar2 = document.getElementById("pbar2");
-    pbar2.onmouseover = function() { this.style.opacity = "0.5"; };
-    pbar2.onmouseout = function() { this.style.opacity = "1"; };
 
     pbar1.style.display = "block";
     pbar1.style.float = "left";
