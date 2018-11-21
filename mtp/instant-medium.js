@@ -31,6 +31,20 @@ function mtp() {
         document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xtrackname"></div><div id="kr"></div>';
 
     // style player elements
+    
+document.getElementById("hovertab");
+    hovertab.onmouseover = function() { this.style.width = "580px"; };
+    hovertab.onmouseout = function() { this.style.width = "-30px"; };
+    document.getElementById("hovertab").style.position = "fixed";
+    document.getElementById("hovertab").style.width = "30px";
+    document.getElementById("hovertab").style.height = "30px";
+    document.getElementById("hovertab").style.zIndex = "9999";
+    document.getElementById("hovertab").style.backgroundColor = "transparent";
+    document.getElementById("hovertab").style.opacity = "1";
+    document.getElementById("hovertab").style.transition = "all 0.4s ease-in-out";
+    document.getElementById("hovertab").style.overflow = "hidden";
+    document.getElementById("hovertab").style.bottom = "15px";
+    document.getElementById("hovertab").style.left = "15px";
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
@@ -57,10 +71,10 @@ function mtp() {
     xtrackname.style.fontFamily = "arial, sans-serif";
     xtrackname.style.fontSize = "12px";
     xtrackname.style.fontWeight = "600";
-    xtrackname.style.width = "500px";
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
     xtrackname.style.marginLeft = "32px";
+    xtrackname.style.width = "90px";
     xtrackname.style.position = "absolute";
     xtrackname.style.overflow = "hidden";
     xtrackname.style.cursor = "default";
@@ -68,8 +82,6 @@ function mtp() {
     xtrackname.innerHTML = tracks[2];
 
     var xplay = document.getElementById("xplay");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
     xplay.style.display = "block";
     xplay.style.width = "0px";
     xplay.style.height = "0px";
@@ -79,8 +91,6 @@ function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
-    xpause.onmouseover = function() { this.style.opacity = "0.5"; };
-    xpause.onmouseout = function() { this.style.opacity = "1"; };
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
@@ -103,8 +113,6 @@ function mtp() {
     pbar2.style.background = songs[0];
 
     var xskip = document.getElementById("xskip");
-    xskip.onmouseover = function() { this.style.opacity = "0.5"; };
-    xskip.onmouseout = function() { this.style.opacity = "1"; };
     xskip.style.display = "block";
     xskip.style.cursor = "pointer";
 
