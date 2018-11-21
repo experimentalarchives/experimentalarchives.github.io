@@ -41,9 +41,9 @@ function mtp() {
     var ongaku = document.getElementById("ongaku");
     ongaku.onmouseover = function() { this.style.marginTop = "3px"; };
     ongaku.onmouseout = function() { this.style.marginTop = "-20px"; };
-    ongaku.style.marginTop = "-20px”;
-    ongaku.style.marginLeft = "12px”;
-    ongaku.style.transition = "all 0.6s”;
+    ongaku.style.marginTop = "-20px";
+    ongaku.style.marginLeft = "12px";
+    ongaku.style.transition = "all 0.6s";
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
