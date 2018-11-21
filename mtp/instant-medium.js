@@ -57,6 +57,7 @@ function mtp() {
     xtrackname.style.fontFamily = "arial, sans-serif";
     xtrackname.style.fontSize = "12px";
     xtrackname.style.fontWeight = "600";
+    xtrackname.style.width = "500px";
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
     xtrackname.style.marginLeft = "32px";
