@@ -46,6 +46,10 @@ p {
   letter-spacing: 0px; 
 }
 
+#playerbox:hover { 
+  opacity: 0.7;
+}
+
 #desc { 
   margin: 40px 0px 16px 0px; 
   word-wrap: break-all; 
