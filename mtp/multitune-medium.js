@@ -77,13 +77,15 @@ window.onload = function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
     var pbar1 = document.getElementById("pbar1");
+    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseout = function() { this.style.opacity = "1"; };
     var pbar2 = document.getElementById("pbar2");
+    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseout = function() { this.style.opacity = "1"; };
 
     pbar1.style.display = "block";
     pbar1.style.float = "left";
@@ -101,13 +103,15 @@ window.onload = function mtp() {
     pbar2.style.background = songs[0];
 
     var xskip = document.getElementById("xskip");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
     xskip.style.display = "block";
     xskip.style.cursor = "pointer";
 
     var sk1 = document.getElementById("sk1");
+    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseout = function() { this.style.opacity = "1"; };
     var sk2 = document.getElementById("sk2");
+    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseout = function() { this.style.opacity = "1"; };
 
     sk1.style.display = "block";
     sk1.style.float = "left";
