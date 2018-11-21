@@ -43,6 +43,8 @@ document.getElementById("hovertab");
     document.getElementById("hovertab").style.opacity = "1";
     document.getElementById("hovertab").style.transition = "all 0.4s ease-in-out";
     document.getElementById("hovertab").style.overflow = "hidden";
+    document.getElementById("hovertab").style.bottom = "15px";
+    document.getElementById("hovertab").style.left = "15px";
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
@@ -72,7 +74,7 @@ document.getElementById("hovertab");
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
     xtrackname.style.marginLeft = "32px";
-    xtrackname.style.width = "90px";
+    xtrackname.style.width = "500px";
     xtrackname.style.position = "absolute";
     xtrackname.style.overflow = "hidden";
     xtrackname.style.cursor = "default";
