@@ -32,19 +32,6 @@ function mtp() {
 
     // style player elements
 
-    document.getElementById("yukoki_mplayer");
-        document.getElementById("yukoki_mplayer").style.width = "170px";
-        document.getElementById("yukoki_mplayer").style.height = "20px";
-        document.getElementById("yukoki_mplayer").style.overflow = "hidden";
-    var  mplgif = document.getElementById("mplgif");
-        mplgif.style.marginLeft = "10px;";
-    var ongaku = document.getElementById("ongaku");
-    ongaku.onmouseover = function() { this.style.marginTop = "3px"; };
-    ongaku.onmouseout = function() { this.style.marginTop = "-20px"; };
-    ongaku.style.marginTop = "-20px";
-    ongaku.style.marginLeft = "12px";
-    ongaku.style.transition = "0.6s";
-
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
@@ -74,8 +61,8 @@ function mtp() {
     xtrackname.style.fontWeight = "600";
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
-    xtrackname.style.marginLeft = "2px";
-    xtrackname.style.width = "90px";
+    xtrackname.style.marginLeft = "32px";
+    xtrackname.style.width = "500px";
     xtrackname.style.position = "absolute";
     xtrackname.style.overflow = "hidden";
     xtrackname.style.cursor = "default";
@@ -83,6 +70,8 @@ function mtp() {
     xtrackname.innerHTML = tracks[2];
 
     var xplay = document.getElementById("xplay");
+    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseout = function() { this.style.opacity = "1"; };
     xplay.style.display = "block";
     xplay.style.width = "0px";
     xplay.style.height = "0px";
@@ -92,6 +81,8 @@ function mtp() {
     xplay.style.cursor = "pointer";
 
     var xpause = document.getElementById("xpause");
+    xpause.onmouseover = function() { this.style.opacity = "0.5"; };
+    xpause.onmouseout = function() { this.style.opacity = "1"; };
     xpause.style.display = "none";
     xpause.style.cursor = "pointer";
 
@@ -114,6 +105,8 @@ function mtp() {
     pbar2.style.background = songs[0];
 
     var xskip = document.getElementById("xskip");
+    xskip.onmouseover = function() { this.style.opacity = "0.5"; };
+    xskip.onmouseout = function() { this.style.opacity = "1"; };
     xskip.style.display = "block";
     xskip.style.cursor = "pointer";
 
