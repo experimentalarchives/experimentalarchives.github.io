@@ -5,7 +5,7 @@
  * @license For open source use: GPLv3
  *          For commercial use: JSColor Commercial License
  * @author  Jan Odvarko
- * @version 2.0.4
+ * @version 2.0.5
  *
  * See usage examples at http://jscolor.com/examples/
  */
@@ -984,9 +984,10 @@ var jsc = {
 		this.required = true; // whether the associated text <input> can be left empty
 		this.refine = true; // whether to refine the entered color code (e.g. uppercase it and remove whitespace)
 		this.hash = false; // whether to prefix the HEX color code with # symbol
-		this.uppercase = true; // whether to uppercase the color code
+		this.uppercase = true; // whether to show the color code in upper case
 		this.onFineChange = null; // called instantly every time the color changes (value can be either a function or a string with javascript code)
 		this.activeClass = 'jscolor-active'; // class to be set to the target element when a picker window is open on it
+		this.overwriteImportant = false; // whether to overwrite colors of styleElement using !important
 		this.minS = 0; // min allowed saturation (0 - 100)
 		this.maxS = 100; // max allowed saturation (0 - 100)
 		this.minV = 0; // min allowed value (brightness) (0 - 100)
@@ -999,32 +1000,32 @@ var jsc = {
 
 		// Color Picker options
 		//
-		this.width = 101; // width of color palette (in px)
-		this.height = 71; // height of color palette (in px)
+		this.width = 181; // width of color palette (in px)
+		this.height = 101; // height of color palette (in px)
 		this.showOnClick = true; // whether to display the color picker when user clicks on its target element
 		this.mode = 'HSV'; // HSV | HVS | HS | HV - layout of the color picker controls
 		this.position = 'bottom'; // left | right | top | bottom - position relative to the target element
 		this.smartPosition = true; // automatically change picker position when there is not enough space for it
-		this.sliderSize = 10; // px
-		this.crossSize = 5; // px
+		this.sliderSize = 16; // px
+		this.crossSize = 8; // px
 		this.closable = false; // whether to display the Close button
 		this.closeText = 'Close';
 		this.buttonColor = '#000000'; // CSS color
 		this.buttonHeight = 18; // px
-		this.padding = 5; // px
+		this.padding = 12; // px
 		this.backgroundColor = '#FFFFFF'; // CSS color
 		this.borderWidth = 1; // px
-		this.borderColor = '#999'; // CSS color
-		this.borderRadius = 0; // px
+		this.borderColor = '#BBBBBB'; // CSS color
+		this.borderRadius = 8; // px
 		this.insetWidth = 1; // px
-		this.insetColor = '#999'; // CSS color
-		this.shadow = false; // whether to display shadow
+		this.insetColor = '#BBBBBB'; // CSS color
+		this.shadow = true; // whether to display shadow
 		this.shadowBlur = 15; // px
 		this.shadowColor = 'rgba(0,0,0,0.2)'; // CSS color
 		this.pointerColor = '#4C4C4C'; // px
 		this.pointerBorderColor = '#FFFFFF'; // px
         this.pointerBorderWidth = 1; // px
-        this.pointerThickness = 1; // px
+        this.pointerThickness = 2; // px
 		this.zIndex = 1000;
 		this.container = null; // where to append the color picker (BODY element by default)
 
@@ -1105,9 +1106,19 @@ var jsc = {
 			}
 			if (!(flags & jsc.leaveStyle)) {
 				if (this.styleElement) {
+					var bgColor = '#' + this.toString();
+					var fgColor = this.isLight() ? '#000' : '#FFF';
+
 					this.styleElement.style.backgroundImage = 'none';
-					this.styleElement.style.backgroundColor = '#' + this.toString();
-					this.styleElement.style.color = this.isLight() ? '#000' : '#FFF';
+					this.styleElement.style.backgroundColor = bgColor;
+					this.styleElement.style.color = fgColor;
+
+					if (this.overwriteImportant) {
+						this.styleElement.setAttribute('style',
+							'background: ' + bgColor + ' !important; ' +
+							'color: ' + fgColor + ' !important;'
+						);
+					}
 				}
 			}
 			if (!(flags & jsc.leavePad) && isPickerOwner()) {
@@ -1796,7 +1807,7 @@ var jsc = {
 		if (this.styleElement) {
 			this.styleElement._jscOrigStyle = {
 				backgroundImage : this.styleElement.style.backgroundImage,
-				backgroundColor : this.styleElement.style.backgroundColorp,
+				backgroundColor : this.styleElement.style.backgroundColor,
 				color : this.styleElement.style.color
 			};
 		}
