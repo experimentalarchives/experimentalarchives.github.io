@@ -12,11 +12,31 @@ function changecolor() {
     document.getElementById("sk2").style.borderLeft = "5px solid " + "#" + color;
 }
 
+var options = {
+    valueElement: "valueInput",        
+    styleElement:'xplay',
+    width: 300,
+    height: 120,
+    sliderSize: 20,
+    position: 'top',
+    insetColor: '#CCC',
+    backgroundColor: '#202020'
+};
+
 var pickers = {};
 function update () {
     document.getElementById('xplay').style.backgroundColor = pickers.changeBackgroundColor.toHEXString();
     document.getElementById('xplay').style.color=pickers.changecolor.toHEXString();
 }
+
+pickers.changecolor = new jscolor('change-color', options);
+pickers.changecolor.onFineChange = update;
+pickers.changecolor.fromString('000');          
+pickers.changeBackgroundColor = new jscolor('change-backgroundColor',options);
+pickers.changeBackgroundColor.onFineChange = update;
+
+update('change-color');
+			
 
     // turn autoplay on or off function
 
