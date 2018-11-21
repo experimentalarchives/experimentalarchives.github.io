@@ -108,6 +108,30 @@ p {
   border-radius: 3px; 
 }
 
+#color-selectx { 
+  float: left;
+  margin: 0 0 0 0;
+}
+
+#color-selectx input { 
+  width: 60px; 
+  text-align: center; 
+  padding: 4.5px 0px 3px 1px; 
+  letter-spacing: 1px; 
+}
+
+#color-selectx input, #autoplay input { 
+  border: 0px; 
+  outline: none; 
+  cursor: pointer; 
+  font-family: arial, sans-serif; 
+  font-size: 12px; 
+  line-height: 12px; 
+  -webkit-border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  border-radius: 3px; 
+}
+
 #trackbox { 
   margin: 16px 0 0 0; 
   width: 400px; 
