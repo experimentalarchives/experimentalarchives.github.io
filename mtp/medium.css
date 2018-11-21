@@ -109,6 +109,7 @@ p {
 }
 
 #color-selectx { 
+  display: inline;
   float: right;
   margin: 0 50px 0 0;
 }
