@@ -39,7 +39,7 @@ var jsc = {
 		var matchClass = new RegExp('(^|\\s)(' + className + ')(\\s*(\\{[^}]*\\})|\\s|$)', 'i');
 
 		for (var i = 0; i < elms.length; i += 1) {
-			if (elms[i].type !== undefined && elms[i].type.toLowerCase() == 'color') {
+			if (elms[i].type !== undefined && elms[i].type.toLowerCase() == 'colorx') {
 				if (jsc.isColorAttrSupported) {
 					// skip inputs of type 'color' if supported by the browser
 					continue;
