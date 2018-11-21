@@ -34,7 +34,7 @@ function mtp() {
     
 document.getElementById("hovertab");
     hovertab.onmouseover = function() { this.style.width = "580px"; };
-    hovertab.onmouseout = function() { this.style.width = "-30px"; };
+    hovertab.onmouseout = function() { this.style.width = "30px"; };
     document.getElementById("hovertab").style.position = "fixed";
     document.getElementById("hovertab").style.width = "30px";
     document.getElementById("hovertab").style.height = "30px";
