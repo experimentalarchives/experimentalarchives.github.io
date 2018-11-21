@@ -26,7 +26,7 @@ window.onload = function mtp() {
 
     // set up DOM
 
-        document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xtrackname"></div><div id="kr"></div>';
+    document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xtrackname"></div><div id="kr"></div>';
 
     // style player elements
 
@@ -65,10 +65,7 @@ window.onload = function mtp() {
     xtrackname.style.color = songs[0];
     xtrackname.innerHTML = tracks[2];
 
-    var xplay = document.getElementById("xplay").onmouseover = function() ;
-     {
-    this.style.backgroundColor = "blue";
-}
+    var xplay = document.getElementById("xplay").onmouseover = function(xplay) {this.style.backgroundColor = "blue"};
     xplay.style.display = "block";
     xplay.style.width = "0px";
     xplay.style.height = "0px";
