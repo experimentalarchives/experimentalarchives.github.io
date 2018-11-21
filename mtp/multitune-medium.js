@@ -81,11 +81,11 @@ window.onload = function mtp() {
     xpause.style.cursor = "pointer";
 
     var pbar1 = document.getElementById("pbar1");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
+    pbar1.onmouseover = function() { this.style.opacity = "0.5"; };
+    pbar1.onmouseout = function() { this.style.opacity = "1"; };
     var pbar2 = document.getElementById("pbar2");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
+    pbar2.onmouseover = function() { this.style.opacity = "0.5"; };
+    pbar2.onmouseout = function() { this.style.opacity = "1"; };
 
     pbar1.style.display = "block";
     pbar1.style.float = "left";
@@ -107,11 +107,11 @@ window.onload = function mtp() {
     xskip.style.cursor = "pointer";
 
     var sk1 = document.getElementById("sk1");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
+    sk1.onmouseover = function() { this.style.opacity = "0.5"; };
+    sk1.onmouseout = function() { this.style.opacity = "1"; };
     var sk2 = document.getElementById("sk2");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
+    sk2.onmouseover = function() { this.style.opacity = "0.5"; };
+    sk2.onmouseout = function() { this.style.opacity = "1"; };
 
     sk1.style.display = "block";
     sk1.style.float = "left";
