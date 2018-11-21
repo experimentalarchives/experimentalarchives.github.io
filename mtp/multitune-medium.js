@@ -103,15 +103,13 @@ window.onload = function mtp() {
     pbar2.style.background = songs[0];
 
     var xskip = document.getElementById("xskip");
+    xskip.onmouseover = function() { this.style.opacity = "0.5"; };
+    xskip.onmouseout = function() { this.style.opacity = "1"; };
     xskip.style.display = "block";
     xskip.style.cursor = "pointer";
 
     var sk1 = document.getElementById("sk1");
-    sk1.onmouseover = function() { this.style.opacity = "0.5"; };
-    sk1.onmouseout = function() { this.style.opacity = "1"; };
     var sk2 = document.getElementById("sk2");
-    sk2.onmouseover = function() { this.style.opacity = "0.5"; };
-    sk2.onmouseout = function() { this.style.opacity = "1"; };
 
     sk1.style.display = "block";
     sk1.style.float = "left";
