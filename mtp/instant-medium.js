@@ -32,7 +32,7 @@ function mtp() {
 
     // style player elements
 
-    document.getElementById("yukoki_mplayer").style.display = "block";
+    document.getElementById("yukoki_mplayer");
         document.getElementById("yukoki_mplayer").style.position = "fixed";
         document.getElementById("yukoki_mplayer").style.width = "170px";
         document.getElementById("yukoki_mplayer").style.height = "20px";
