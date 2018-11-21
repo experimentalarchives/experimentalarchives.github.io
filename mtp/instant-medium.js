@@ -59,7 +59,7 @@ document.getElementById("interior");
     interior.style.height = "26px;";
     interior.style.transition = "all 0.4s ease-in-out;";
     interior.onmouseover = function() { this.style.marginLeft = "-50px"; };
-    interior.onmouseout = function() { this.style.marginLeft = "0px"; };
+    interior.onmouseout = function() { this.style.marginLeft = "-50px"; };
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
