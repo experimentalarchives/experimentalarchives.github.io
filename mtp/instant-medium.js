@@ -60,7 +60,6 @@ function mtp() {
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
     xtrackname.style.marginLeft = "32px";
-    xtrackname.style.width = "500px";
     xtrackname.style.position = "absolute";
     xtrackname.style.overflow = "hidden";
     xtrackname.style.cursor = "default";
