@@ -39,7 +39,7 @@ var jsc = {
 		var matchClass = new RegExp('(^|\\s)(' + className + ')(\\s*(\\{[^}]*\\})|\\s|$)', 'i');
 
 		for (var i = 0; i < elms.length; i += 1) {
-			if (elms[i].type !== undefined && elms[i].type.toLowerCase() == 'colorx') {
+			if (elms[i].type !== undefined && elms[i].type.toLowerCase() == 'color') {
 				if (jsc.isColorAttrSupported) {
 					// skip inputs of type 'color' if supported by the browser
 					continue;
@@ -74,8 +74,8 @@ var jsc = {
 	isColorAttrSupported : (function () {
 		var elm = document.createElement('input');
 		if (elm.setAttribute) {
-			elm.setAttribute('type', 'colorx');
-			if (elm.type.toLowerCase() == 'colorx') {
+			elm.setAttribute('type', 'color');
+			if (elm.type.toLowerCase() == 'color') {
 				return true;
 			}
 		}
