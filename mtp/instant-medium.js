@@ -40,8 +40,8 @@ function mtp() {
     var  mplgif = document.getElementById("mplgif");
         mplgif.style.margin = "0 0 0 10px;";
     var ongaku = document.getElementById("ongaku");
-    ongaku.onmouseover = function() { this.style.margin = "3px 0 0 12px"; };
-    ongaku.onmouseout = function() { this.style.margin = "-20px 0 0 12px"; };
+    ongaku.onmouseover = function() { this.style.margin = "3px 0px 0px 12px"; };
+    ongaku.onmouseout = function() { this.style.margin = "-20px 0px 0px 12px"; };
     ongaku.style.margin = "-20px 0 0 12px";
     ongaku.style.transition = "all 0.6s";
 
