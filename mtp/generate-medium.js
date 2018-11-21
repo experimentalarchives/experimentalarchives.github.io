@@ -60,7 +60,7 @@ function auto() {
 function generate() {
 
     // hide customisation interface and show codebox
-
+    document.getElementById("index-color-selectx").style.display = "none";
     document.getElementById("index-color-select").style.display = "none";
     document.getElementById("code1").style.display = "block";
     document.getElementById("code2").style.display = "block";
