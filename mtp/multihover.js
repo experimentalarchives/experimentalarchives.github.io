@@ -1797,7 +1797,7 @@ var jsc = {
 			this.styleElement._jscOrigStyle = {
 				backgroundImage : this.styleElement.style.backgroundImage,
 				backgroundColor : this.styleElement.style.backgroundColor,
-				colorx : this.styleElement.style.colorx
+				color : this.styleElement.style.colorx
 			};
 		}
 
