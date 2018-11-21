@@ -96,7 +96,7 @@ p {
   letter-spacing: 1px; 
 }
 
-#color-select input, #autoplay input { 
+#color-select input, #color-selectx input, #autoplay input { 
   border: 0px; 
   outline: none; 
   cursor: pointer; 
@@ -118,18 +118,6 @@ p {
   text-align: center; 
   padding: 4.5px 0px 3px 1px; 
   letter-spacing: 1px; 
-}
-
-#color-selectx input, #autoplay input { 
-  border: 0px; 
-  outline: none; 
-  cursor: pointer; 
-  font-family: arial, sans-serif; 
-  font-size: 12px; 
-  line-height: 12px; 
-  -webkit-border-radius: 3px; 
-  -moz-border-radius: 3px; 
-  border-radius: 3px; 
 }
 
 #trackbox { 
