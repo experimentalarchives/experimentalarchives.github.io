@@ -32,6 +32,13 @@ p {
   -webkit-appearance: none; 
 }
 
+#mobile { 
+  position: absolute;
+  width: 580px; 
+  left: calc(50% - 284px); 
+  margin: 8px 0 0 0;
+}
+
 #playerbox { 
   position: absolute; 
   width: 190px; 
