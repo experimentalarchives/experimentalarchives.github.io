@@ -12,6 +12,12 @@ function changecolor() {
     document.getElementById("sk2").style.borderLeft = "5px solid " + "#" + color;
 }
 
+var pickers = {};
+function update () {
+    document.getElementById('xplay').style.backgroundColor = pickers.changeBackgroundColor.toHEXString();
+    document.getElementById('xplay').style.color=pickers.changecolor.toHEXString();
+}
+
     // turn autoplay on or off function
 
 var autos = "off";
