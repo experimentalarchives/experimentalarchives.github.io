@@ -32,6 +32,21 @@ function mtp() {
 
     // style player elements
 
+    document.getElementById("yukoki_mplayer").style.display = "block";
+        document.getElementById("yukoki_mplayer").style.position = "fixed";
+        document.getElementById("yukoki_mplayer").style.bottom = "10px";
+        document.getElementById("yukoki_mplayer").style.left = "10px";
+        document.getElementById("yukoki_mplayer").style.width = "170px";
+        document.getElementById("yukoki_mplayer").style.height = "20px";
+        document.getElementById("yukoki_mplayer").style.overflow = "hidden";
+    var  mplgif = document.getElementById("mplgif");
+        mplgif.style.margin = "0 0 0 10px;";
+    var ongaku = document.getElementById("ongaku");
+    ongaku.onmouseover = function() { this.style.margin = "3px 0 0 12px"; };
+    ongaku.onmouseout = function() { this.style.margin = "-20px 0 0 12px"; };
+    ongaku.style.margin = "-20px 0 0 12px";
+    ongaku.style.transition = "all 0.6s";
+
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
