@@ -46,7 +46,7 @@ document.getElementById("hovertab");
     document.getElementById("hovertab").style.bottom = "15px";
     document.getElementById("hovertab").style.left = "15px";
     
-    var multisymbol embed = document.getElementById("multisymbol");
+document.getElementById("multisymbol");
     multisymbol.style.width = "24px;";
     multisymbol.style.height = "24px;";
     multisymbol.style.marginTop = "3px;";
