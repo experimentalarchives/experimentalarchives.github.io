@@ -66,7 +66,7 @@ window.onload = function mtp() {
     xtrackname.innerHTML = tracks[2];
 
     var xplay = document.getElementById("xplay");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
+    xplay.onmouseover = function() { this.style.color = "blue; };
     xplay.onmouseout = function() { this.style.opacity = "1"; };
     xplay.style.display = "block";
     xplay.style.width = "0px";
