@@ -32,17 +32,18 @@ function mtp() {
 
     // style player elements
 
-    document.getElementById("yukoki_mplayer");
+    document.getElementById("yukoki_mplayer”);
         document.getElementById("yukoki_mplayer").style.width = "170px";
         document.getElementById("yukoki_mplayer").style.height = "20px";
         document.getElementById("yukoki_mplayer").style.overflow = "hidden";
     var  mplgif = document.getElementById("mplgif");
-        mplgif.style.margin = "0 0 0 10px;";
+        mplgif.style.marginLeft = "10px;";
     var ongaku = document.getElementById("ongaku");
-    ongaku.onmouseover = function() { this.style.margin = "3px 12px"; };
-    ongaku.onmouseout = function() { this.style.margin = "-20px 12px"; };
-    ongaku.style.margin = "-20px 12px";
-    ongaku.style.transition = "0.6s";
+    ongaku.onmouseover = function() { this.style.marginTop = "3px"; };
+    ongaku.onmouseout = function() { this.style.marginTop = "-20px"; };
+    ongaku.style.marginTop = "-20px”;
+    ongaku.style.marginLeft = "12px”;
+    ongaku.style.transition = "all 0.6s”;
 
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
