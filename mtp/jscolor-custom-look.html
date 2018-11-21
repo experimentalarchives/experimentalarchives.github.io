@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom look</title>
+    <style>
+    input { width:6em; }
+    </style>
+</head>
+<body>
+
+
+<script src="jscolor.js"></script>
+
+<p>Small picker with no shadow:
+<input value="ffcc00" class="jscolor {width:101, padding:0, shadow:false,
+    borderWidth:0, backgroundColor:'transparent', insetColor:'#000'}">
+
+
+<p>Large dark picker:
+<input value="ffcc00" class="jscolor {width:243, height:150, position:'right',
+    borderColor:'#FFF', insetColor:'#FFF', backgroundColor:'#666'}">
+
+
+<p>Plastic look:
+<input value="ffcc00" class="jscolor {position:'right',
+    borderColor:'#FFF #666 #666 #FFF',
+    insetColor:'#666 #FFF #FFF #666',
+    backgroundColor:'#CCC'}">
+
+
+<p style="margin-top:3em;">Check out <a href="http://jscolor.com/examples/">more examples at jscolor.com</a>!</p>
+
+
+</body>
+</html>
