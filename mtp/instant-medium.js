@@ -65,6 +65,8 @@ function mtp() {
     controls2.style.float = "right";
 
     var xtrackname = document.getElementById("xtrackname");
+    xtrackname.onmouseover = function() { this.style.opacity = "1"; };
+    xtrackname.onmouseout = function() { this.style.opacity = "0"; };
     xtrackname.style.display = "block";
     xtrackname.style.textAlign = "left";
     xtrackname.style.fontFamily = "arial, sans-serif";
@@ -72,7 +74,7 @@ function mtp() {
     xtrackname.style.fontWeight = "600";
     xtrackname.style.lineHeight = "13px";
     xtrackname.style.marginTop = "-1px";
-    xtrackname.style.marginLeft = "32px";
+    xtrackname.style.marginLeft = "2px";
     xtrackname.style.width = "90px";
     xtrackname.style.position = "absolute";
     xtrackname.style.overflow = "hidden";
