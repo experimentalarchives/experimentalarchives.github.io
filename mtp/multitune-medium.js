@@ -65,8 +65,7 @@ window.onload = function mtp() {
     xtrackname.style.color = songs[0];
     xtrackname.innerHTML = tracks[2];
 
-    var xplay = document.getElementById("xplay");
-     .onmouseover = function() 
+    var xplay = document.getElementById("xplay").onmouseover = function() ;
      {
     this.style.backgroundColor = "blue";
 }
