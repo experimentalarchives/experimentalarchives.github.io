@@ -1,6 +1,9 @@
     // code forked at https://cinness.github.io/
 
 window.onload = function mtp() {
+   
+            $("p").mouseover(function() {
+                  $("p").css("background-color", "yellow");
 
     // get user input info
 
