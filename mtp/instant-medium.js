@@ -54,8 +54,15 @@ document.getElementById("multisymbol");
     multisymbol.style.transition = "all 0.4s ease-in-out;";
     multisymbol.onmouseover = function() { this.style.width = "174px"; };
     multisymbol.onmouseout = function() { this.style.width = "24px"; };
-    
 
+    document.getElementById("interior");
+    interior.style.marginLeft = "3px;";
+    interior.style.marginTop = "4px;";
+    interior.style.height = "26px;";
+    interior.style.transition = "all 0.4s ease-in-out;";
+    interior.onmouseover = function() { this.style.marginLeft = "-30px"; };
+    interior.onmouseout = function() { this.style.marginLeft = "3px"; };
+    
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
