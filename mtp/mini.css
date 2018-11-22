@@ -50,7 +50,14 @@ p {
   -webkit-appearance: none; 
 }
 
-#playerbox { 
+#playerbox1 { 
+  position: absolute; 
+  width: 500px; 
+  margin: 7px 0 0 calc(50% - 58px);
+  letter-spacing: 0px; 
+}
+
+#playerbox2 { 
   position: absolute; 
   width: 500px; 
   margin: 7px 0 0 calc(50% - 58px);
