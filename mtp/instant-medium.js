@@ -43,8 +43,6 @@ document.getElementById("hovertab");
     document.getElementById("hovertab").style.opacity = "1";
     document.getElementById("hovertab").style.transition = "all 0.4s ease-in-out";
     document.getElementById("hovertab").style.overflow = "hidden";
-    document.getElementById("hovertab").style.bottom = "15px";
-    document.getElementById("hovertab").style.left = "15px";
     
 document.getElementById("multisymbol");
     multisymbol.style.width = "24px";
