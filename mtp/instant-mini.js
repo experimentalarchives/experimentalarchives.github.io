@@ -65,10 +65,6 @@ function mtp() {
     document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
 
-    document.getElementById("mtplayer").style.display = "block";
-    document.getElementById("mtplayer").style.width = "20px";
-    document.getElementById("mtplayer").style.padding = "3px 5px";
-
     var xaudio = document.getElementById("xaudio");
     xaudio.style.display = "none";
 
