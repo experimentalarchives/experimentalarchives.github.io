@@ -38,7 +38,7 @@ function generate() {
     document.getElementById("code1").style.display = "block";
     document.getElementById("code2").style.display = "block";
     document.getElementById("desc").style.textAlign = "left";
-    document.getElementById("desc").innerHTML = "<b>First code:</b> Paste it where you want the player to be. For exact positioning, change the margin-top and margin-left numbers.<br><br><b>Second code:</b> Paste it just before /body (located near the end of your blog or website’s HTML)."
+    document.getElementById("desc").innerHTML = "<b>Step 1:</b> Paste the blue code just before /body (located near the end of your blog or website’s HTML).<br><br><b>Step 2:</b> Paste the yellow or green code where you want the player to be (yellow code for the minimal version, green code for the hover tab). For exact positioning, adjust the margin numbers."
     
     // declare variables for multi-info and multi-names spans
 
