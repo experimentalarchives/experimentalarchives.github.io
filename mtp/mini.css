@@ -50,7 +50,7 @@ p {
   -webkit-appearance: none; 
 }
 
-#playerbox1 { 
+#playerbox { 
   position: absolute; 
   width: 500px; 
   margin: 7px 0 0 calc(50% - 58px);
