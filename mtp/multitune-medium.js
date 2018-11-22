@@ -30,6 +30,39 @@ window.onload = function mtp() {
 
     // style player elements
 
+    document.getElementById("hovertab");
+    hovertab.onmouseover = function() { this.style.width = "580px"; };
+    hovertab.onmouseout = function() { this.style.width = "30px"; };
+    document.getElementById("hovertab").style.position = "fixed";
+    document.getElementById("hovertab").style.width = "30px";
+    document.getElementById("hovertab").style.height = "30px";
+    document.getElementById("hovertab").style.zIndex = "9999";
+    document.getElementById("hovertab").style.backgroundColor = "transparent";
+    document.getElementById("hovertab").style.opacity = "1";
+    document.getElementById("hovertab").style.transition = "all 0.4s ease-in-out";
+    document.getElementById("hovertab").style.overflow = "hidden";
+    
+    document.getElementById("multisymbol");
+    multisymbol.style.width = "24px";
+    multisymbol.style.height = "24px";
+    multisymbol.style.marginTop = "3px";
+    multisymbol.style.marginLeft = "3px";
+    multisymbol.style.transition = "all 0.4s ease-in-out";
+    multisymbol.onmouseover = function() { this.style.width = "174px"; };
+    multisymbol.onmouseout = function() { this.style.width = "24px"; };
+
+    var xaudio = document.getElementById("interior");
+    interior.style.marginLeft = "3px";
+    interior.style.marginTop = "4px";
+    interior.style.height = "26px";
+    interior.style.transition = "all 0.4s ease-in-out";
+    interior.onmouseover = function() { this.style.marginLeft = "-25px"; };
+    interior.onmouseout = function() { this.style.marginLeft = "3px"; };
+    
+    document.getElementById("mtplayer").style.display = "block";
+    document.getElementById("mtplayer").style.width = "25px";
+    document.getElementById("mtplayer").style.padding = "0px 15px";
+
     document.getElementById("mtplayer").style.display = "block";
     document.getElementById("mtplayer").style.width = "25px";
     document.getElementById("mtplayer").style.padding = "0px 15px";
