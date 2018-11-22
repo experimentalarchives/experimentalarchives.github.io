@@ -55,7 +55,7 @@ document.getElementById("multisymbol");
     multisymbol.onmouseover = function() { this.style.width = "174px"; };
     multisymbol.onmouseout = function() { this.style.width = "24px"; };
 
-document.getElementById("interior");
+    var xaudio = document.getElementById("interior");
     interior.style.marginLeft = "3px;";
     interior.style.marginTop = "4px;";
     interior.style.height = "26px;";
