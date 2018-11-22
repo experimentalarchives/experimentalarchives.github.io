@@ -51,7 +51,7 @@ document.getElementById("multisymbol");
     multisymbol.style.height = "24px";
     multisymbol.style.marginTop = "3px";
     multisymbol.style.marginLeft = "3px";
-    multisymbol.style.transition = "all 0.4s ease-in-out;";
+    multisymbol.style.transition = "all 0.4s ease-in-out";
     multisymbol.onmouseover = function() { this.style.width = "174px"; };
     multisymbol.onmouseout = function() { this.style.width = "24px"; };
 
