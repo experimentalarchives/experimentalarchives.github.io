@@ -47,19 +47,19 @@ document.getElementById("hovertab");
     document.getElementById("hovertab").style.left = "15px";
     
 document.getElementById("multisymbol");
-    multisymbol.style.width = "24px;";
-    multisymbol.style.height = "24px;";
-    multisymbol.style.marginTop = "3px;";
-    multisymbol.style.marginLeft = "3px;";
+    multisymbol.style.width = "24px";
+    multisymbol.style.height = "24px";
+    multisymbol.style.marginTop = "3px";
+    multisymbol.style.marginLeft = "3px";
     multisymbol.style.transition = "all 0.4s ease-in-out;";
     multisymbol.onmouseover = function() { this.style.width = "174px"; };
     multisymbol.onmouseout = function() { this.style.width = "24px"; };
 
     var xaudio = document.getElementById("interior");
-    interior.style.marginLeft = "3px;";
-    interior.style.marginTop = "4px;";
-    interior.style.height = "26px;";
-    interior.style.transition = "all 0.4s ease-in-out;";
+    interior.style.marginLeft = "3px";
+    interior.style.marginTop = "4px";
+    interior.style.height = "26px";
+    interior.style.transition = "all 0.4s ease-in-out";
     interior.onmouseover = function() { this.style.marginLeft = "-25px"; };
     interior.onmouseout = function() { this.style.marginLeft = "3px"; };
     
