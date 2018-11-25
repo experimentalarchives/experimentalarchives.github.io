@@ -40,6 +40,7 @@ window.onload = function mtp() {
 // hover tab
     
     document.getElementById("hovertab");
+    document.getElementById("hovertab").style.transitionDelay = "4s";
     hovertab.onmouseover = function() { this.style.width = "580px"; };
     hovertab.onmouseout = function() { this.style.width = "30px"; };
     document.getElementById("hovertab").style.position = "fixed";
