@@ -1,226 +1,83 @@
-// code forked at https://cinness.github.io/
+// live preview color function
 
-window.onload = function mtp() {
-        
-// get user input info
+var color;
+function changecolor() {
+    color = document.getElementById("playercolor").value;
+    document.getElementById("xtrackname").style.color = "#" + color;
+    document.getElementById("pbar1").style.background = "#" + color;
+    document.getElementById("pbar2").style.background = "#" + color;
+    document.getElementById("xplay").style.borderLeft = "7px solid " + "#" + color;
+    document.getElementById("sk1").style.borderLeft = "5px solid " + "#" + color;
+    document.getElementById("sk2").style.borderLeft = "5px solid " + "#" + color;
+}
 
-    var initinfo = document.getElementById("multi-info").innerHTML;
-    var songs = initinfo.split(" ");
-    var sq = songs.length - 1;
+// turn autoplay on or off function
 
-    var initnames = document.getElementById("multi-names").innerHTML;
-    var tracks = initnames.split(",");
-
-// fill holes left by possible blank track titles
-
-    (function() {
-         var i = 0;
-         for ( i; i < songs.length; i++ ) {
-             if ( tracks[i] === undefined ) {
-                 tracks[i] = " ";
-                 }
-             else {}
-            }
-            return;
-    })();
-
-// set up DOM
-
-    document.getElementById("mtplayer").innerHTML = '<audio id="xaudio" preload="auto"><source src="' + songs[2] +'" type="audio/mpeg"></audio><div id="controls1"><div id="xplay"></div><div id="xpause"><div id="pbar1"></div><div id="pbar2"></div><div id="kr2"></div></div></div><div id="controls2"><div id="xskip"><div id="sk1"></div><div id="sk2"></div><div id="kr3"></div></div></div><div id="xtrackname"></div><div id="kr"></div>';
-
-// style player elements
-    
-    document.getElementById("mtplayer").style.display = "block";
-    document.getElementById("mtplayer").style.width = "25px";
-    document.getElementById("mtplayer").style.padding = "0px 15px";
-
-    var xaudio = document.getElementById("xaudio");
-    xaudio.style.display = "none";
-
-// hover tab
-    
-    document.getElementById("hovertab");
-    hovertab.onmouseover = function() { this.style.width = "580px"; };
-    hovertab.onmouseout = function() { this.style.width = "30px"; };
-    document.getElementById("hovertab").style.position = "fixed";
-    document.getElementById("hovertab").style.width = "30px";
-    document.getElementById("hovertab").style.height = "30px";
-    document.getElementById("hovertab").style.zIndex = "9999";
-    document.getElementById("hovertab").style.backgroundColor = "transparent";
-    document.getElementById("hovertab").style.opacity = "1";
-    document.getElementById("hovertab").style.transition = "all 0.4s ease-in-out";
-    document.getElementById("hovertab").style.overflow = "hidden";
-    
-    document.getElementById("multisymbol");
-    multisymbol.style.width = "24px";
-    multisymbol.style.height = "24px";
-    multisymbol.style.marginTop = "3px";
-    multisymbol.style.marginLeft = "3px";
-    multisymbol.style.transition = "all 0.4s ease-in-out";
-    multisymbol.onmouseover = function() { this.style.width = "174px"; };
-    multisymbol.onmouseout = function() { this.style.width = "24px"; };
-
-    document.getElementById("interior");
-    interior.style.marginLeft = "3px";
-    interior.style.marginTop = "4px";
-    interior.style.height = "26px";
-    interior.style.transition = "all 0.4s ease-in-out";
-    interior.onmouseover = function() { this.style.marginLeft = "-25px"; };
-    interior.onmouseout = function() { this.style.marginLeft = "3px"; };
-    
-    document.getElementById("kr").style.clear = "both";
-    document.getElementById("kr2").style.clear = "both";
-    document.getElementById("kr3").style.clear = "both";
-
-    var controls1 = document.getElementById("controls1");
-    controls1.style.display = "block";
-    controls1.style.float = "left";
-
-    var controls2 = document.getElementById("controls2");
-    controls2.style.display = "block";
-    controls2.style.float = "right";
-
-    var xtrackname = document.getElementById("xtrackname");
-    xtrackname.style.display = "block";
-    xtrackname.style.textAlign = "left";
-    xtrackname.style.fontFamily = "arial, sans-serif";
-    xtrackname.style.fontSize = "12px";
-    xtrackname.style.fontWeight = "600";
-    xtrackname.style.lineHeight = "13px";
-    xtrackname.style.marginTop = "-1px";
-    xtrackname.style.marginLeft = "32px";
-    xtrackname.style.width = "500px";
-    xtrackname.style.position = "absolute";
-    xtrackname.style.overflow = "hidden";
-    xtrackname.style.cursor = "default";
-    xtrackname.style.color = songs[0];
-    xtrackname.innerHTML = tracks[2];
-
-    var xplay = document.getElementById("xplay");
-    xplay.onmouseover = function() { this.style.opacity = "0.5"; };
-    xplay.onmouseout = function() { this.style.opacity = "1"; };
-    xplay.style.display = "block";
-    xplay.style.width = "0px";
-    xplay.style.height = "0px";
-    xplay.style.borderTop = "5px solid transparent";
-    xplay.style.borderLeft = "7px solid " + songs[0];
-    xplay.style.borderBottom = "5px solid transparent";
-    xplay.style.cursor = "pointer";
-
-    var xpause = document.getElementById("xpause");
-    xpause.onmouseover = function() { this.style.opacity = "0.5"; };
-    xpause.onmouseout = function() { this.style.opacity = "1"; };
-    xpause.style.display = "none";
-    xpause.style.cursor = "pointer";
-
-    var pbar1 = document.getElementById("pbar1");
-    var pbar2 = document.getElementById("pbar2");
-
-    pbar1.style.display = "block";
-    pbar1.style.float = "left";
-    pbar1.style.marginRight = "2px";
-    pbar1.style.width = "3px";
-    pbar1.style.height = "6.5px";
-    pbar1.style.marginTop = "0.5px";
-    pbar1.style.background = songs[0];
-
-    pbar2.style.display = "block";
-    pbar2.style.float = "left";
-    pbar2.style.width = "3px";
-    pbar2.style.height = "6.5px";
-    pbar2.style.marginTop = "0.5px";
-    pbar2.style.background = songs[0];
-
-    var xskip = document.getElementById("xskip");
-    xskip.onmouseover = function() { this.style.opacity = "0.5"; };
-    xskip.onmouseout = function() { this.style.opacity = "1"; };
-    xskip.style.display = "block";
-    xskip.style.cursor = "pointer";
-
-    var sk1 = document.getElementById("sk1");
-    var sk2 = document.getElementById("sk2");
-
-    sk1.style.display = "block";
-    sk1.style.float = "left";
-    sk1.style.width = "0px";
-    sk1.style.height = "0px";
-    sk1.style.borderTop = "5px solid transparent";
-    sk1.style.borderLeft = "5px solid " + songs[0];
-    sk1.style.borderBottom = "5px solid transparent";
-
-    sk2.style.display = "block";
-    sk2.style.float = "left";
-    sk2.style.width = "0px";
-    sk2.style.height = "0px";
-    sk2.style.borderTop = "5px solid transparent";
-    sk2.style.borderLeft = "5px solid " + songs[0];
-    sk2.style.borderBottom = "5px solid transparent";
-
-// check autoplay preference
-
-    if ( songs[1] == "on" ) {
-        xaudio.play();
-        xplay.style.display = "none";
-        xpause.style.display = "block";
+var autos = "off";
+function auto() {
+    if ( autos == "off" ) {
+        autos = "on";
+        document.getElementById("abutton").style.background = "#0CDB58";
+        document.getElementById("abutton").value = "autoplay is on";
+    }
+    else if ( autos == "on" ) {
+        autos = "off";
+        document.getElementById("abutton").style.background = "#FF0054";
+        document.getElementById("abutton").value = "autoplay is off";
     }
     else {}
+}
 
-// play button function
+// generate user code function
 
-    xplay.onclick = function() {
-        this.style.display = "none";
-        xpause.style.display = "block";
-        xaudio.play();
-        return;
-    };
+function generate() {
 
-// pause button function
+// hide customisation interface and show codebox
 
-    xpause.onclick = function() {
-        this.style.display = "none";
-        xplay.style.display = "block";
-        xaudio.pause();
-        return;
-    };
+    document.getElementById("index-color-select").style.display = "none";
+    document.getElementById("code1").style.display = "block";
+    document.getElementById("code2").style.display = "block";
+    document.getElementById("code3").style.display = "block";
+    document.getElementById("desc").style.textAlign = "left";
+    document.getElementById("desc").innerHTML = "<b>1.</b> Paste the code in blue just before <code>/body</code><br><br><b>2.</b> Choose the regular (yellow) or hover tab (green) version. Styling help is provided in the code — first paste it after <code>body</code>"
+            
+// declare variables for multi-info and multi-names spans
 
-// skip button & endsong button function
-// list = 2 because songs[0] and songs[1] are colour and autoplay preferences
+    var oneinfo = "#" + color + " " + autos + " ";
+    var twoinfo = "0,0,";
 
-    var list = 2;
+// add spaces after valid urls and commas after valid titles in form
 
-   function skipend() {
-        if ( list == sq ) {
-            xaudio.src = songs[2];
-            xtrackname.innerHTML = tracks[2];
-            list = 2;
-            xaudio.play();
-            xplay.style.display = "none";
-            xpause.style.display = "block";
-            return;
-            }
-        else {
-            ++list;
-            xaudio.src = songs[list];
-            xtrackname.innerHTML = tracks[list];
-            xaudio.play();
-            xplay.style.display = "none";
-            xpause.style.display = "block";
-            return;
-            }
+    var aa, bb, cc, dd, i;
+
+    for (i=1; i < 10; i++) {
+        aa = "trackurl" + i;
+        cc = "trackname" + i;
+        bb = document.getElementById(aa);
+        dd = document.getElementById(cc);
+        if ( bb.value != "" ) {
+            bb.value += " ";
+            oneinfo += bb.value;
+        }
+        if ( dd.value != "" ) {
+            dd.value += ",";
+            twoinfo += dd.value;
+        }
     }
 
-// skip song function
+    (function() {
 
-    xskip.onclick = function() {
-        skipend();
-        };
+// delete the last index in info strings so they don't end in space or comma
 
-// autoplay next track on song-end function
+        var oneinfolength = oneinfo.length - 1;
+        var oneinfonew = oneinfo.slice(0,oneinfolength);
+        var twoinfolength = twoinfo.length - 1;
+        var twoinfonew = twoinfo.slice(0,twoinfolength);
 
-    xaudio.onended = function() {
-        skipend();
-    };
+// generate user code in "textarea"
 
-// close off js
-    
-};
+        document.getElementById("code1").innerHTML = "<!----------------------------------------  code forked at https://cinness.github.io/  ----------------------------------------> &lt;script src&equals;&quot;https://cinness.github.io/mtp/instant-medium.js&quot;&gt;&lt;&sol;script&gt;";
+        document.getElementById("code2").innerHTML = "<!----------------------------------------  The player is automatically positioned to be at the bottom left of your site. If you specifically want it somewhere, paste it there and replace BOTTOM with MARGIN-TOP and replace LEFT with MARGIN-LEFT. Adjust the margin numbers to your liking. Depending on your site's coding, you may have to remove POSITION:FIXED.  ----------------------------------------> &lt;div id&equals;&quot;mtplayer&quot; style=&quot;bottom: 16px; left: 5px; position: fixed;&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display: none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display: none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;";
+        document.getElementById("code3").innerHTML = "<!----------------------------------------  The player is automatically positioned to be at the bottom left of your site. For a different corner, change BOTTOM with TOP, for example. To specifically position somewhere, replace BOTTOM with MARGIN-TOP and replace LEFT with MARGIN-LEFT — adjust those numbers to your liking.  ----------------------------------------> &lt;div id&equals;&quot;hovertab&quot; style=&quot;bottom: 13px; left: 15px; position: fixed;&quot;&gt;&lt;div id&equals;&quot;multisymbol&quot;&gt;&lt;div id&equals;&quot;interior&quot;&gt;&lt;table cellspacing&quot;0&quot; cellpadding&equals;&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt; <!----------------------------------------  For the music player gif, you can of course use any image. This is just a general guideline, and if you're especially unfamiliar with coding, it's easier to visit https://bit.ly/2OXkAyC for example and right-click any gif to copy its image address. Then, simply replace the following img src URL.  ----------------------------------------> &lt;img src&equals;&quot;https://66.media.tumblr.com/tumblr_m7w2izzY0j1r6o8v2.gif&quot;&gt;&lt;&sol;td&gt;&lt;td&gt;&lt;div id&equals;&quot;mtplayer&quot;&gt;&lt;span id&equals;&quot;multi-info&quot; style&equals;&quot;display: none;&quot;&gt;" + oneinfonew + "&lt;&sol;span&gt;&lt;span id&equals;&quot;multi-names&quot; style&equals;&quot;display: none;&quot;&gt;" + twoinfonew + "&lt;&sol;span&gt;&lt;&sol;div&gt;&lt;&sol;table&gt;&lt;&sol;div&gt;&lt;&sol;div&gt;&lt;&sol;div&gt;";
+    })();
+}
