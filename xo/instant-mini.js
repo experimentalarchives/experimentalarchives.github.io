@@ -1,8 +1,6 @@
 // code forked at https://cinness.github.io/
 
-mtp();
-
-function mtp() {
+window.onload = function mtp() {
 
 // get user input info
 
@@ -42,10 +40,11 @@ function mtp() {
 // hover tab
     
     document.getElementById("hovertab");
+    document.getElementById("hovertab").style.transitionDelay = "4s";
     hovertab.onmouseover = function() { this.style.width = "580px"; };
-    hovertab.onmouseout = function() { this.style.width = "28px"; };
+    hovertab.onmouseout = function() { this.style.width = "30px"; };
     document.getElementById("hovertab").style.position = "fixed";
-    document.getElementById("hovertab").style.width = "28px";
+    document.getElementById("hovertab").style.width = "30px";
     document.getElementById("hovertab").style.height = "30px";
     document.getElementById("hovertab").style.zIndex = "9999";
     document.getElementById("hovertab").style.backgroundColor = "transparent";
@@ -67,7 +66,7 @@ function mtp() {
     interior.style.marginTop = "4px";
     interior.style.height = "26px";
     interior.style.transition = "all 0.4s ease-in-out";
-    interior.onmouseover = function() { this.style.marginLeft = "-20px"; };
+    interior.onmouseover = function() { this.style.marginLeft = "-25px"; };
     interior.onmouseout = function() { this.style.marginLeft = "3px"; };
 
     document.getElementById("kr").style.clear = "both";
@@ -226,5 +225,3 @@ function mtp() {
 // close off js
     
 };
-
-
